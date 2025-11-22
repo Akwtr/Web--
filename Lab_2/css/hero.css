@@ -1,0 +1,145 @@
+/* css/hero.css */
+.imgGroup{
+    position: absolute;
+    right:50px;
+    top:380px;
+}
+.hero {
+    padding: 140px 0 80px;
+    background: linear-gradient(to bottom, #f3f3f3, white);
+}
+.btn-primary{
+    color:black;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    z-index: 3;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: gray;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+.imgText{
+    position: relative;
+}
+.hero-image {
+    position: relative;
+
+}
+.hero-content{
+    margin-top: 100px;
+    z-index: 2;
+}
+.secText{
+    margin-top: 100px;
+    z-index: 2;
+}
+.imgGroup_dop{
+    position: relative;
+    z-index: 2;
+}
+.svgImg{
+    position: absolute;
+    z-index: 1;
+    left: -600px;
+    bottom:-300px;
+    pointer-events: none;
+}
+.phone-mockup {
+    background: linear-gradient(135deg, #FBBC05, #FFD54F);
+    padding: 2rem;
+    border-radius: 30px;
+    transform: rotate(3deg);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.phone-container {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    transform: rotate(-3deg);
+}
+
+.phone-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.app-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.app-icon {
+    width: 40px;
+    height: 40px;
+    background:#FBBC05;
+    border-radius: 10px;
+}
+
+.phone-card {
+    background: lightgray;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.card-item {
+    width: 50px;
+    height: 50px;
+    background: #FBBC05;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    height: 20px;
+    background: #ddd;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.phone-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.grid-item {
+    height: 80px;
+    background: lightgray;
+    border-radius: 12px;
+}
+
+.grid-item.active {
+    background:#FBBC05;
+}
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .phone-mockup {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}

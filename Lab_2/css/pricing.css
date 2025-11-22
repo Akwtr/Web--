@@ -1,0 +1,79 @@
+/* css/pricing.css */
+.pricing {
+    padding: 80px 0;
+    background: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing-card {
+    padding: 2.5rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
+}
+
+.pricing-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.card-dark.pricing-card {
+    background: black;
+    color:white;
+}
+
+.card-yellow.pricing-card {
+    background: #FBBC05;
+    color:black;
+}
+
+.card-yellow .pricing-features li {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.pricing-card button {
+    width: 100%;
+}
+.section-headerP{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+}
+
+
+

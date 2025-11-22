@@ -1,0 +1,29 @@
+.photo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.photo-text{
+    margin: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.photo-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.yellow-photo{
+    color:#FBBC05;
+}
+.photo-desc{
+    font-size: .8rem;
+}
+.photo-text p{
+    width: 400px;
+}

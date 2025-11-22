@@ -1,0 +1,45 @@
+/* css/about.css */
+.about {
+    padding: 80px 0;
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text {
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FBBC05;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.about-text{
+    color: black;
+}
+.textAb{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

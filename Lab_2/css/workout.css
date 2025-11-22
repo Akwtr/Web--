@@ -1,0 +1,45 @@
+/* Workout Section */
+.workout {
+    padding: 80px 0;
+}
+
+.workout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+.workout-text {
+    color: black;
+    font-size: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+.workout-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.workout-text .btn-primary{
+    color:white;
+}
+
+
+@media (max-width: 768px) {
+    .about-grid,
+    .workout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .workout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workout-grid > :first-child {
+        order: 2;
+    }
+}
