@@ -1,0 +1,203 @@
+footer {
+    background: white;
+    padding:40px;
+    border-radius: 12px;
+    border: 3px solid #333;
+    margin: 15px;
+}
+.mobileFooter{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.logoF{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.footer-section{
+    width:80%;
+}
+.pLogo{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.strongLogo{
+    font-size: 20px;
+}
+.footer-section p {
+    /*font-size: 12px;*/
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    transform: translateX(5px);
+    color: #ff8c42;
+
+}
+.learning-content{
+    text-align: center;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgba(255, 222, 204, 1);
+    color: #333;
+}
+.imgSocial{
+    width: 15px;
+}
+
+.social-icon:hover {
+    background-color: #ff8c42;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+    font-size: 11px;
+    color: #999;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-bottom-links a {
+    color: #666;
+    padding: 0 12px;
+    border-right: 2px solid #000;
+}
+.footer-bottom-links a:last-child {
+    border-right: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #ff8c42;
+}
+
+
+.footer-bottom p {
+    font-size: 14px;
+}
+.imgContactItem{
+    width: 30px;
+}
+.footerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #eee;
+    margin-top: 20px;
+}
+
+
+/* Footer - Mobile 390px */
+@media (max-width: 700px) {
+    footer {
+        padding: 28px 18px;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobileFooter{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+    .footer-section{
+        width: 100%;
+    }
+    .footer-section h4 {
+        font-size: 17px;
+    }
+    .footer-section p {
+        font-size: 14px;
+    }
+    .footer-links a {
+        font-size: 14px;
+    }
+    .contact-info {
+        font-size: 14px;
+    }
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .contact-info{
+        margin-bottom: 20px;
+    }
+    .logoF{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .pLogo{
+        text-align: center;
+        padding: 7px;
+    }
+    .footerFlex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
